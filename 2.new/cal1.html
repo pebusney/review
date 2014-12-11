@@ -1,0 +1,41 @@
+<!DOCTYPE html><!--好好看看-->
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+var ifFun = function() {
+	var hehe = {};
+	if(hehe) {
+		var i = 0;
+		for(key in hehe) {
+			i ++;
+		}
+		return i ? 'full object' : 'empty object';//i是true则返回full obiect,否则返回empty object
+	} 
+	else {
+		return 'yoo,error';
+	}
+	obj = {key : value}//这一段指遍历对象
+	for(key in obj){
+		obj[key]
+	}
+	var arr = [1, 2, 4, 7, 10];
+	for(var i = 0; i < arr.length; i++) {
+		if(i === 2) break;//break是124，continue是4 7 10；
+		console.log(arr[i]);
+	}
+	var obj = {
+		name : 'young';
+		age : 1111111111121;
+	};
+	with(obj) {
+		console.log(name);
+	}
+};
+ifFun();
+</script>
+</html>
