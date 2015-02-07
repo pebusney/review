@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	</body>
+	<script type="text/javascript">
+	
+		var father = function() {
+			this.name = 'father';
+			this.age = 50;
+		};
+		var children = function() {
+			//this.name = 'children';
+			this.age = 21;
+		};
+		children.prototype = new father();//返回对象类型原型的引用
+		var children1 = new children();
+		console.log(children1.name);
+		console.log(children1.age);
+	</script>
+</html>

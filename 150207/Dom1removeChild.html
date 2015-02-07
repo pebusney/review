@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title></title>
+	<style type="text/css"></style>
+</head>
+<body>
+	<ul id="ul1">
+		<li>savhapejnrpoa<a href="javascript:;">删除</a></li>
+		<li>s奇偶is卷我呢a<a href="javascript:;">删除</a></li>
+		<li>savh哦iawinrpoa<a href="javascript:;">删除</a></li>
+		<li>哦教教俺poa<a href="javascript:;">删除</a></li>
+	</ul>
+</body>
+<script type="text/javascript" src="D:/wamp/www/practice/jquery.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		var aA = document.getElementsByTagName('a');
+		var oul = document.getElementById('ul1');
+		var i = 0;
+
+		for (i=0;i<aA.length;i++){
+			aA[i].onclick = function(){
+				oul.removeChild(this.parentNode);
+			}
+		}
+	}
+</script>
+</html>

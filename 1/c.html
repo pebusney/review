@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	</body>
+	<script type="text/javascript">
+	var zero = function(name) {
+		var obj = {};
+		obj.name = name;
+		obj.method = function() {
+			console.log('create by function');
+		};
+		return obj;
+	};
+	var one = zero('Jing');
+	console.log(one.name);
+	</script>
+</html>
