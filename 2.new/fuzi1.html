@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var old = function(){
+		this.name = 'laobusi';
+		this.age = 88;
+		this.lalala = function(){
+			console.log('i am laobusi');
+		}
+	}
+	var young = function(){
+		this.sex = 'male';
+		//this.name = 'child';
+	}
+	young.prototype = new old();
+	var person = new young();
+	console.log(person.name);
+	person.lalala();
+</script>
+</html>
+<!--
+<script type="text/javascript">
+	var older = function(){
+		this.name = 'laobusi';
+		this.age = 88;
+		this.method = function(){
+			console.log('yoo');
+		}
+	}
+	var younger = function(){}
+	younger.prototype = new older();
+	var baby = new younger();
+	console.log(baby.name);
+	baby.method();
+</script>
+-->
